@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .aa {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<label>
+
+aaaaaaa
+
+    <input type="file" class="aa">
+</label>
+
+
+<br>
+<br>
+<img src="" class="ii" alt="">
+
+
+
+
+<script src="static/js/lib/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('.aa').on('change',function (e) {
+//            console.log(e.target.files);
+            var files = e.target.files;
+            var reader = new FileReader();//新建一个FileReader
+            reader.readAsDataURL(files[0], "UTF-8");
+            reader.onload = function (evt) { //读取完文件之后会回来这里
+                var fileString = evt.target.result;
+                //post方式上传图片到控制器
+                var date = {"file": fileString};
+                $('.ii').attr('src',fileString)
+                console.log(fileString)//图片信息
+//                $.post("editProfile", date).success(function (result) {
+//                    alert("ok");
+//                });
+            }
+        })
+    })
+</script>
+</body>
+</html>
