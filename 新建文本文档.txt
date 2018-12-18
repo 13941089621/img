@@ -1,0 +1,58 @@
+<plist version="1.0">
+	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>assets</key>
+				<array>
+					<dict>
+						<key>kind</key>
+						<string>software-package</string>
+						<key>url</key>
+						<!--你的服务器ipa下载地址-->
+						<string>http://119.90.51.13:8082/ss/BlockchainAppKit.ipa</string>
+						
+					</dict>
+					<dict>
+						<key>kind</key>
+						<string>full-size-image</string>
+						<key>needs-shine</key>
+						<true/>
+						<key>url</key>
+						<string>
+							<!--你的服务器下载时URL图片 2倍图-->
+							http://img.zcool.cn/community/01c14859ec5c4ea801216a4b28497c.jpg@3000w_1l_2o_100sh.jpg
+						</string>
+					</dict>
+					<dict>
+						<key>kind</key>
+						<string>display-image</string>
+						<key>needs-shine</key>
+						<true/>
+						<key>url</key>
+						<string>
+							<!--你的服务器下载时的图片地址-->
+							http://img.zcool.cn/community/01c14859ec5c4ea801216a4b28497c.jpg@3000w_1l_2o_100sh.jpg
+						</string>
+					</dict>
+				</array>
+				<key>metadata</key>
+				<dict>
+					<key>bundle-identifier</key>
+					<string>com.liuzhen.cbapp</string>
+					<key>bundle-version</key>
+					<string>0.1.1</string>
+					<key>kind</key>
+					<string>software</string>
+					<key>title</key>
+					<string>CoinBig</string>
+				</dict>
+				
+				
+				
+				
+			</dict>
+		</array>
+	</dict>
+	</plist>
+
